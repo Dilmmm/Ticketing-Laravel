@@ -1,0 +1,240 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@font-face {
+    font-family: "CopperplateCC-Heavy";
+    src: url("public/fonts/CopperplateCC-Heavy.otf");
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    font-family: 'Poppins', sans-serif;
+}
+
+.title-index{
+    font-family: 'CopperplateCC-Heavy', sans-serif;
+}
+body{
+    min-height: 100vh;
+}
+
+/*.navigation{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    bottom: 20px;
+    width: 70px;
+    height: 100vh;
+    box-sizing: initial;
+    background: #00c1b2;
+    transition: width 0.5s;
+    overflow-x: hidden;
+}
+.navigation.active{
+    width: 200px;
+}
+
+.navigation ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-left: 5px;
+    padding-top: 40px;
+}
+.navigation ul .list{
+    position: relative;
+    list-style: none;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.navigation ul .list.active{
+    background: rgb(224 249 255);
+}
+.navigation ul .list b:nth-child(1){
+    position: absolute;
+    top: -20px;
+    height: 20px;
+    width: 100%;
+    background: rgb(224 249 255);
+    display: none;
+}
+.navigation ul .list b:nth-child(1)::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-bottom-right-radius: 20px;
+    background: #00c1b2;
+}
+.navigation ul .list b:nth-child(2){
+    position: absolute;
+    bottom: -20px;
+    height: 20px;
+    width: 100%;
+    background: rgb(224 249 255);
+    display: none;
+}
+.navigation ul .list b:nth-child(2)::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 20px;
+    background: #00c1b2;
+}
+.navigation ul .list.active b:nth-child(1),
+.navigation ul .list.active b:nth-child(2){
+    display: block;
+}
+
+.navigation ul .list .link{
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+}
+.navigation ul .list.active .link{
+    color: #333;
+}
+.navigation ul .list .link .icon{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 70px;
+    text-align: center;
+}
+.navigation ul .list .link .icon ion-icon{
+    font-size: 1.5em;
+}
+.navigation ul .list .link .text{
+    position: relative;
+    display: block;
+    padding-left: 10px;
+    height: 60px;
+    line-height: 60px;
+    white-space: normal;
+}
+.toggle{
+    width: 50px;
+    height: 50px;
+    background: #00c1b2;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+}
+.toggle.active{
+    background: #ff4d89;
+}
+.toggle ion-icon{
+    position: absolute;
+    color: #fff;
+    font-size: 34px;
+    display: none;
+
+}
+.toggle ion-icon.open,
+.toggle.active ion-icon.close{
+    display: block;
+}
+.toggle ion-icon.close,
+.toggle.active ion-icon.open{
+    display: none;
+}*/
+
+
+/*////////////////////////CERCLE POUR COULEUR URGENCE/////////////////////////////////////////*/
+#cercle{
+    margin: 2px 1px;
+    width: 27px;
+    height: 27px;
+    border-radius: 20px;
+}
+/*//////////////MESSAGE ERREUR FOMULAIRE////////////////////////////////////////////////////////////////////*/
+.error{
+    display: block;
+    width: fit-content;
+    color: white;
+    font-size: 14px;
+    background-color: rgba(255, 68, 97, 0.9);
+    border-radius: 5px;
+    padding-left: 3px;
+}
+/*////////////////////////////////////PAGINATION/////////////////////////////////////////////*/
+nav{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+ul.pagination{
+    display: inline-flex;
+}
+
+li.page-item{
+    margin-left: 13px;
+    font-size: 20px;
+    font-weight: bold;
+}
+li.page-item.active{
+    color: white;
+
+}
+/*////////////////TABLEAU INDEX///////////////////////////////////////////////*/
+.table {
+    border-spacing: 0 8px;
+}
+
+
+tr td:nth-child(n+13),
+tr th:nth-child(n+13) {
+    border-radius: 0 .625rem .625rem 0;
+}
+
+tr td:nth-child(1),
+tr th:nth-child(1) {
+    border-radius: .625rem 0 0 .625rem;
+}
+
+i {
+    font-size: 1.5rem !important;
+}
+.iconeTableau{
+    font-size: 0.5rem !important;
+}
+
+.is-hidden{
+    display: none;
+}
+.icone{
+    font-size: 40px !important;
+}
+
+/*.graph .tdGraph:nth-child(n+5),
+.graph .thGraph:nth-child(n+5) {
+    border-radius: 0 .625rem .625rem 0;
+}
+
+.graph .tdGraph:nth-child(1),
+.graph .thGraph:nth-child(1) {
+    border-radius: .625rem 0 0 .625rem;
+}
+.tableGraph {
+    border-spacing: 0 2px;
+}*/
